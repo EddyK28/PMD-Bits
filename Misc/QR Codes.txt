@@ -1,0 +1,12 @@
+PSMD QR Codes contain 32 bytes of extra data in addition to the mail code itself. This includes a static identifier string, region code, wondermail flag, mail code length, mail code hash and a some seemingly unused data.  See eddyk28.github.io/SRC/SRC.js for more info on the mail code hash.
+
+   idStr -  8B - Static bytes used by the game to identify its QR codes
+  region -  1B - region code, 1 = US, 2 = EU (0 = JP?)
+   uknId -  1B - Game id?  (Always 0x04)
+ bWonder -  1B - boolean "is Wondermail"
+     pad -  1B - padding? Always 0?
+ codeLen -  2B - length of mail code (0xA0 for rescue mail)
+    uknA - 10B - unknown, seemingly unused
+    hash -  4B - mail code hash
+    uknB -  4B - unknown, seemingly unused
+mailCode - ##B - the mail code text (UTF-16)

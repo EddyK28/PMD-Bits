@@ -1,0 +1,1 @@
+Things related to Super Mystery Dungeon's BCLS2 collision file format.
