@@ -1,0 +1,19 @@
+PSMD
+  Always show scarves
+  202A73E0 00000001
+
+  Always show scarves (Alt)
+  2028D77C 00000001
+
+  Always show scarves EU
+  202A7D40 00000001
+
+  Always show scarves EU (Alt)
+  2028E028 00000001
+  
+  
+  
+GtI
+  No Text Delay 
+  (Credit to shutterbug2000 for discovering this one)
+  00278FAC 00000000
